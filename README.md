@@ -1,2 +1,5 @@
-# text-preprocessing
-some basic programs for preprocessing text data before training
+# preparing-the-ground
+This repo contains several miscellaneous codes regarding
+1. pre-processing data
+2. fetching features
+3. analyzing features
