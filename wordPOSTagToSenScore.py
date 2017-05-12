@@ -12,8 +12,6 @@ objFile = open("objScore.txt", "w")
 
 errorLog = open("errorLog.txt", "w")
 
-condition = 0
-
 for line in open("sampleBengFormat.txt", encoding="utf-8").read().split("\n"):
     tokens = line.split(",")
 
