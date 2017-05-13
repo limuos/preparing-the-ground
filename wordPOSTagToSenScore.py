@@ -47,12 +47,9 @@ for line in open("sampleBengFormat.txt", encoding="utf-8").read().split("\n"):
         errorLog.write(str(tokens[0].strip()) + " not found with POS Tag : r\n")
 
     try:
-        verbTagPos = swn.senti_synset(testVrb).pos_score()
-        verbTagNeg = swn.senti_synset(testVrb).neg_score()
-        verbTagObj = swn.senti_synset(testVrb).obj_score()
-        posFile.write(str(verbTagPos)+"\n")
-        negFile.write(str(verbTagNeg)+"\n")
-        objFile.write(str(verbTagObj)+"\n")
+        posFile.write(str(swn.senti_synset(testVrb).pos_score())+"\n")
+        negFile.write(str(swn.senti_synset(testVrb).neg_score())+"\n")
+        objFile.write(str(swn.senti_synset(testVrb).obj_score())+"\n")
         continue
     except:
         errorLog.write(str(tokens[0].strip()) + " not found with POS Tag : v\n")
