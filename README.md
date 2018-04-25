@@ -1,3 +1,3 @@
 # random
 
-Random temporary source codes
+Random source codes
